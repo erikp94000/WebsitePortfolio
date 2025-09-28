@@ -16,9 +16,9 @@
   </head>
 
   <body>
-    <!-- Navbar with light gray background -->
+    <!-- Navbar with dark gray background -->
     <nav
-      class="navbar navbar-expand-lg navbar-light bg-light"
+      class="navbar navbar-expand-lg navbar-dark bg-dark"
       role="navigation"
       aria-label="Main navigation"
     >
@@ -50,12 +50,12 @@
         </div>
       </div>
     </nav>
-
-    <!-- Soft light blue header -->
-    <div class="container-fluid py-2 bg-info text-dark text-center">
-      <h1 class="fs-3">Website Portfolio</h1>
-      <p class="mb-0"> Erik Porter</p>
-    </div>
+    <!--Was able to find an awesome gradient color scale-->
+    <div class="container-fluid bg-primary text-white text-center py-5 mb-5" style="background: linear-gradient(90deg, #4d87dd, #6f42c1);">
+  <h1 class="display-4">Welcome to My Portfolio</h1>
+  <p class="lead">Exploring Technology, Programming, Engineering, and Game Development</p>
+  <p class="mb-0"> Erik Porter</p>
+</div>
 
    <!-- Main container -->
 <div class="container mt-5 text-center">
@@ -81,7 +81,8 @@
 
   <!-- Introduction text -->
   <p>
-    Hello! My name is Erik Porter. I’m currently a student with an interest in Technology, Programming, Engineering, and Video Game Development. This site will share a little about me and my work.
+    Hello! My name is Erik Porter. I’m currently a student with an interest in Technology, Programming, Engineering, and Video Game Development. 
+   I grew up in small town in the mountains called Leadville, which is actually the highest elevated city in America sitting at about 10,150 feet. This site will share a little about me and my work.
   </p>
 </div>
 
@@ -90,53 +91,68 @@
   <h2>School & Major</h2>
   <p>I attend MSU Denver & am currently finishing my major in Computer Science <a href="https://www.msudenver.edu/computer-sciences/computer-science-major-bs/" target="_blank">MSU Denver</a>.</p>
 </div>
-
-<div class="container mt-4">
-  <h2 class="text-center">Skills</h2>
-  <ul class="list-group">
-    <li class="list-group-item">
-      <strong>Technical Skills:</strong> Unity, SolidWorks, Python, Java, HTML, CSS, JavaScript
-    </li>
-    <li class="list-group-item">
-      <strong>Other Skills:</strong> Mechanical Work, Computer Assembly, Cooking
-    <li class="list-group-item">
-      <strong>Soft Skills:</strong> Team Collaboration, Problem Solving, Customer Communication
-    </li>
-  </ul>
+<!-- Added some borders and spacing for my list of skills -->
+<div class="row mt-4">
+  <div class="col-md-4 mb-3">
+    <div class="card h-100 bg-dark text-white">
+      <div class="card-body">
+        <h5 class="card-title">Technical Skills</h5>
+        <ul>
+          <li>Unity</li>
+          <li>SolidWorks</li>
+          <li>Python, Java, HTML, CSS, JavaScript</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 mb-3">
+    <div class="card h-100 bg-dark text-white">
+      <div class="card-body">
+        <h5 class="card-title">Other Skills</h5>
+        <ul>
+          <li>Mechanical Work</li>
+          <li>Computer Assembly</li>
+          <li>Cooking</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 mb-3">
+    <div class="card h-100 bg-dark text-white">
+      <div class="card-body">
+        <h5 class="card-title">Soft Skills</h5>
+        <ul>
+          <li>Team Collaboration</li>
+          <li>Problem Solving</li>
+          <li>Customer Communication</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </div>
 
 <div class="container mt-4">
-  <h2 class="text-center">About Me</h2>
-  <p>Some hobbies and personal interests of mine is going to the gym, working on my car, and learning the Unity Game Programming.
-     In my free time, I love spending time outdoors with my dog Moose.</p>
-  <div class="text-center mt-4">
-        <h2>Moose</h2>
-      </div>
-      <img
-        class="mx-auto d-block mb-4"
-        src="images/moose.jpg"
-        alt="dog Pic"
-        width="320"
-      />
-       <p>Check out some things I enjoy:</p>
-  <ul>
-    <li><a href="https://www.alltrails.com/us/colorado" target="_blank">Hiking Trails</a></li>
-    <li><a href="https://unity.com/" target="_blank">Unity Webstite</a></li>
-  </ul>
-</div>
-      <!-- Neutral gray button -->
-      <a
-        href="https://www.msudenver.edu/"
-        class="btn btn-secondary d-block mx-auto mt-4"
-        target="_blank"
-      >
-        Visit MSU Denver
-      </a>
+  <h2 class="text-center mb-4">About Me</h2>
+  <div class="row align-items-center">
+    <!-- Text Column -->
+    <div class="col-md-6">
+      <p>
+        Some hobbies and personal interests of mine include going to the gym, working on my car, and learning Unity Game Programming.
+        In my free time, I love spending time outdoors with my dog Moose.
+      </p>
+      <p>Check out some things I enjoy:</p>
+      <ul>
+        <li><a href="https://www.alltrails.com/us/colorado" target="_blank">Hiking Trails</a></li>
+        <li><a href="https://unity.com/" target="_blank">Unity Website</a></li>
+      </ul>
+    </div>
 
-      <!-- Soft alert (light blue) -->
-      <div class="alert alert-info mt-3 text-center" role="alert">
-        This is a simple Bootstrap alert.
-      </div>
+    <!-- Image Column -->
+    <div class="col-md-5 text-center">
+      <img src="images/moose.jpg" alt="Moose" class="img-fluid rounded shadow">
+    </div>
+  </div>
+</div>
 
       <div class="mb-5"></div>
     </div>
