@@ -11,137 +11,146 @@
       rel="stylesheet"
     />
 
-    <!-- Bootstrap JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      /* Style for circular images */
+      .circle-img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-bottom: 1rem;
+      }
+    </style>
   </head>
 
   <body>
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark" role="navigation" aria-label="Main navigation">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Explore</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-link active" href="index.html">Home</a>
-        <a class="nav-link" aria-current="page" href="technicalproject.html">Projects</a>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" role="navigation" aria-label="Main navigation">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Explore</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" href="index.html">Home</a>
+            <a class="nav-link" aria-current="page" href="technicalproject.html">Projects</a>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</nav>
+    </nav>
 
-    <!--Was able to find an awesome gradient color scale-->
+    <!-- Hero Section -->
     <div class="container-fluid bg-primary text-white text-center py-5 mb-5" style="background: linear-gradient(90deg, #4d87dd, #6f42c1);">
-  <h1 class="display-4">Welcome to My Portfolio</h1>
-  <p class="lead">Exploring Technology, Programming, Engineering, and Game Development</p>
-  <p class="mb-0"> Erik Porter</p>
-</div>
-
-   <!-- Main container -->
-<div class="container mt-5 text-center">
-  <h2>Introduction</h2>
-
-
-  <!-- Style for consistent circular images -->
-  <style>
-    .circle-img {
-      width: 150px;
-      height: 150px;
-      object-fit: cover; /* Ensures image fills the square and crops nicely */
-      border-radius: 50%; /* Makes it a circle */
-      margin-bottom: 1rem; /* Spacing below */
-    }
-  </style>
-
-
-  <!-- Images -->
-  <img src="images/avatar.jpg" alt="My Avatar" class="circle-img">
-  <img src="images/leadville.jpg" alt="Leadville" class="circle-img">
-
-
-  <!-- Introduction text -->
-  <p>
-    Hello! My name is Erik Porter. I’m currently a student with an interest in Technology, Programming, Engineering, and Video Game Development. 
-   I grew up in small town in the mountains called Leadville, which is actually the highest elevated city in America sitting at about 10,150 feet. This site will share a little about me and my work.
-  </p>
-</div>
-
-
-<div class="container text-center mt-4">
-  <h2>School & Major</h2>
-  <p>I attend MSU Denver & am currently finishing my major in Computer Science <a href="https://www.msudenver.edu/computer-sciences/computer-science-major-bs/" target="_blank">MSU Denver</a>.</p>
-</div>
-<!-- Added some borders and spacing for my list of skills -->
-<div class="row mt-4">
-  <div class="col-md-4 mb-3">
-    <div class="card h-100 bg-dark text-white">
-      <div class="card-body">
-        <h5 class="card-title">Technical Skills</h5>
-        <ul>
-          <li>Unity</li>
-          <li>SolidWorks</li>
-          <li>Python, Java, HTML, CSS, JavaScript</li>
-        </ul>
-      </div>
+      <h1 class="display-4">Welcome to My Portfolio</h1>
+      <p class="lead">Exploring Technology, Programming, Engineering, and Game Development</p>
+      <p class="mb-0">Erik Porter</p>
     </div>
-  </div>
-  <div class="col-md-4 mb-3">
-    <div class="card h-100 bg-dark text-white">
-      <div class="card-body">
-        <h5 class="card-title">Other Skills</h5>
-        <ul>
-          <li>Mechanical Work</li>
-          <li>Computer Assembly</li>
-          <li>Cooking</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="col-md-4 mb-3">
-    <div class="card h-100 bg-dark text-white">
-      <div class="card-body">
-        <h5 class="card-title">Soft Skills</h5>
-        <ul>
-          <li>Team Collaboration</li>
-          <li>Problem Solving</li>
-          <li>Customer Communication</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
 
-<div class="container mt-4">
-  <h2 class="text-center mb-4">About Me</h2>
-  <div class="row align-items-center">
-    <!-- Text Column -->
-    <div class="col-md-6">
+    <!-- Main container -->
+    <div class="container mt-5 text-center">
+      <h2>Introduction</h2>
+
+      <!-- Images -->
+      <img src="images/avatar.jpg" alt="My Avatar" class="circle-img">
+      <img src="images/leadville.jpg" alt="Leadville" class="circle-img">
+
+      <!-- Introduction text -->
       <p>
-        Some hobbies and personal interests of mine include going to the gym, working on my car, and learning Unity Game Programming.
-        In my free time, I love spending time outdoors with my dog Moose.
+        Hello! My name is Erik Porter. I’m currently a student with an interest in Technology, Programming, Engineering, and Video Game Development. 
+        I grew up in a small town in the mountains called Leadville, which is actually the highest elevated city in America at about 10,150 feet. This site will share a little about me and my work.
       </p>
-      <p>Check out some things I enjoy:</p>
-      <ul>
-        <li><a href="https://www.alltrails.com/us/colorado" target="_blank">Hiking Trails</a></li>
-        <li><a href="https://unity.com/" target="_blank">Unity Website</a></li>
-      </ul>
     </div>
 
-    <!-- Image Column -->
-    <div class="col-md-5 text-center">
-      <img src="images/moose.jpg" alt="Moose" class="img-fluid rounded shadow">
+    <div class="container text-center mt-4">
+      <h2>School & Major</h2>
+      <p>I attend MSU Denver & am currently finishing my major in Computer Science 
+        <a href="https://www.msudenver.edu/computer-sciences/computer-science-major-bs/" target="_blank">MSU Denver</a>.
+      </p>
     </div>
-  </div>
-</div>
 
-      <div class="mb-5"></div>
+    <!-- Skills Section with side margins -->
+    <div class="container mt-4">
+      <div class="row g-3"> <!-- Adds gutters for spacing between cards -->
+        <div class="col-md-4 mb-3">
+          <div class="card h-100 bg-dark text-white">
+            <div class="card-body">
+              <h5 class="card-title">Technical Skills</h5>
+              <ul>
+                <li>Unity</li>
+                <li>SolidWorks</li>
+                <li>Python, Java, HTML, CSS, JavaScript</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card h-100 bg-dark text-white">
+            <div class="card-body">
+              <h5 class="card-title">Other Skills</h5>
+              <ul>
+                <li>Mechanical Work</li>
+                <li>Computer Assembly</li>
+                <li>Cooking</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card h-100 bg-dark text-white">
+            <div class="card-body">
+              <h5 class="card-title">Soft Skills</h5>
+              <ul>
+                <li>Team Collaboration</li>
+                <li>Problem Solving</li>
+                <li>Customer Communication</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </body>
-  
+
+    <!-- About Me Section -->
+    <div class="container mt-4">
+      <h2 class="text-center mb-4">About Me</h2>
+      <div class="row align-items-center">
+        <!-- Text Column -->
+        <div class="col-md-6">
+          <p>
+            Some hobbies and personal interests of mine include going to the gym, working on my car, and learning Unity Game Programming.
+            In my free time, I love spending time outdoors with my dog Moose.
+          </p>
+          <p>Check out some things I enjoy:</p>
+          <ul>
+            <li><a href="https://www.alltrails.com/us/colorado" target="_blank">Hiking Trails</a></li>
+            <li><a href="https://unity.com/" target="_blank">Unity Website</a></li>
+          </ul>
+        </div>
+
+        <!-- Image Column -->
+        <div class="col-md-5 text-center">
+          <img src="images/moose.jpg" alt="Moose" class="img-fluid rounded shadow">
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-5"></div>
+
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3">
       <p class="mb-0">&copy; 2025 Erik Porter | All Rights Reserved</p>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
