@@ -12,10 +12,39 @@
     />
 
     <style>
+      /* Flexbox layout for sticky footer */
+      html, body {
+        height: 100%;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+      }
+      main {
+        flex: 1; /* takes up remaining space */
+      }
+
+      /* Project card spacing and dark background */
+      .project-card {
+        margin-top: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+        padding: 10px; /* padding inside the card */
+        background-color: #343a40; /* Bootstrap dark */
+        color: #ffffff;
+      }
+
       /* Ensure consistent media size inside cards */
-      .card-img-top {
-        height: 220px;         /* fixed height */
-        object-fit: cover;     /* crop nicely */
+      .card-img-top,
+      video.card-img-top {
+        height: 220px;
+        object-fit: cover;
+        border-radius: 5px;
+      }
+
+      /* Collapse text white */
+      .collapse p {
+        color: #ffffff !important;
       }
     </style>
   </head>
@@ -54,90 +83,92 @@
       <p class="lead">Showcasing assignments and personal projects</p>
     </div>
 
-    <!-- Projects Section -->
-    <div class="container mt-5 mb-5 pb-5">
-      <div class="row g-4">
-        <!-- Project 1 -->
-        <div class="col-md-4">
-          <div class="card h-100 shadow project-card">
-            <video class="card-img-top" autoplay loop muted playsinline>
-              <source src="images/unitygame.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-            <div class="card-body">
-              <h5 class="card-title">Unity Game Prototype</h5>
-              <p class="card-text">
-                A Unity 3D game demonstrating mechanics, physics, and scripting.
-              </p>
-              <a class="btn btn-sm btn-outline-primary" data-bs-toggle="collapse" href="#project1Details" role="button" aria-expanded="false" aria-controls="project1Details">
-                Read More
-              </a>
-              <div class="collapse mt-2" id="project1Details">
-                <p class="text-muted small">
-                  Learned player movement, collisions, and basic AI.  
-                  Tools: Unity, C#, Visual Studio.  
-                  Skills gained: Object-oriented programming, debugging, and game mechanics design.
+    <!-- Main content wrapper -->
+    <main>
+      <!-- Projects Section -->
+      <div class="container mt-5 mb-5">
+        <div class="row g-4">
+          <!-- Project 1 -->
+          <div class="col-md-4">
+            <div class="card h-100 shadow project-card">
+              <video class="card-img-top" autoplay loop muted playsinline>
+                <source src="images/unitygame.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+              <div class="card-body">
+                <h5 class="card-title">Unity Game Prototype</h5>
+                <p class="card-text">
+                  A Unity 3D game demonstrating mechanics, physics, and scripting.
                 </p>
+                <a class="btn btn-sm btn-outline-light" data-bs-toggle="collapse" href="#project1Details" role="button" aria-expanded="false" aria-controls="project1Details">
+                  Read More
+                </a>
+                <div class="collapse mt-2" id="project1Details">
+                  <p class="small">
+                    Learned player movement, collisions, and basic AI.  
+                    Tools: Unity, C#, Visual Studio.  
+                    Skills gained: Object-oriented programming, debugging, and game mechanics design.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- Project 2 -->
-        <div class="col-md-4">
-          <div class="card h-100 shadow project-card">
-            <img
-              src="images/website.jpg"
-              class="card-img-top"
-              alt="Project 2"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Website Creation</h5>
-              <p class="card-text">
-                Built a personal portfolio site using Visual Studio Code, Git,
-                and GitHub.
-              </p>
-              <a class="btn btn-sm btn-outline-primary" data-bs-toggle="collapse" href="#project2Details" role="button" aria-expanded="false" aria-controls="project2Details">
-                Read More
-              </a>
-              <div class="collapse mt-2" id="project2Details">
-                <p class="text-muted small">
-                  Learned about responsive layouts, Bootstrap, and version control.  
-                  Tools: HTML, CSS, Bootstrap, GitHub.  
-                  Skills gained: Responsive design, code versioning, and deployment.
+          <!-- Project 2 -->
+          <div class="col-md-4">
+            <div class="card h-100 shadow project-card">
+              <img
+                src="images/website.jpg"
+                class="card-img-top"
+                alt="Project 2"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Website Creation</h5>
+                <p class="card-text">
+                  Built a personal portfolio site using Visual Studio Code, Git, and GitHub.
                 </p>
+                <a class="btn btn-sm btn-outline-light" data-bs-toggle="collapse" href="#project2Details" role="button" aria-expanded="false" aria-controls="project2Details">
+                  Read More
+                </a>
+                <div class="collapse mt-2" id="project2Details">
+                  <p class="small">
+                    Learned about responsive layouts, Bootstrap, and version control.  
+                    Tools: HTML, CSS, Bootstrap, GitHub.  
+                    Skills gained: Responsive design, code versioning, and deployment.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- Project 3 -->
-        <div class="col-md-4">
-          <div class="card h-100 shadow project-card">
-            <img src="images/car.jpg" class="card-img-top" alt="Project 3" />
-            <div class="card-body">
-              <h5 class="card-title">Auto Mechanical Work</h5>
-              <p class="card-text">
-                Replaced the head gaskets in my engine after a failure.
-              </p>
-              <a class="btn btn-sm btn-outline-primary" data-bs-toggle="collapse" href="#project3Details" role="button" aria-expanded="false" aria-controls="project3Details">
-                Read More
-              </a>
-              <div class="collapse mt-2" id="project3Details">
-                <p class="text-muted small">
-                  Gained hands-on experience in diagnostics, engine repair, and mechanical troubleshooting.  
-                  Tools: Wrench set, torque wrench, repair manual.  
-                  Skills gained: Engine assembly, diagnostics, and mechanical precision.
+          <!-- Project 3 -->
+          <div class="col-md-4">
+            <div class="card h-100 shadow project-card">
+              <img src="images/car.jpg" class="card-img-top" alt="Project 3" />
+              <div class="card-body">
+                <h5 class="card-title">Auto Mechanical Work</h5>
+                <p class="card-text">
+                  Replaced the head gaskets in my engine after a failure.
                 </p>
+                <a class="btn btn-sm btn-outline-light" data-bs-toggle="collapse" href="#project3Details" role="button" aria-expanded="false" aria-controls="project3Details">
+                  Read More
+                </a>
+                <div class="collapse mt-2" id="project3Details">
+                  <p class="small">
+                    Gained hands-on experience in diagnostics, engine repair, and mechanical troubleshooting.  
+                    Tools: Wrench set, torque wrench, repair manual.  
+                    Skills gained: Engine assembly, diagnostics, and mechanical precision.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </main>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
+    <footer class="bg-dark text-white text-center py-3 mt-auto">
       <p class="mb-0">&copy; 2025 Erik Porter | All Rights Reserved</p>
     </footer>
 
@@ -145,5 +176,3 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
-
-
