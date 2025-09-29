@@ -12,7 +12,7 @@
     />
 
     <style>
-      /* Flexbox layout for sticky footer */
+      /* make sure footer stays at bottom */
       html, body {
         height: 100%;
       }
@@ -21,20 +21,20 @@
         flex-direction: column;
       }
       main {
-        flex: 1; /* takes up remaining space */
+        flex: 1; /* take up remaining space */
       }
 
-      /* Project card spacing and dark background */
+      /* card styling */
       .project-card {
         margin-top: 10px;
         margin-left: 5px;
         margin-right: 5px;
-        padding: 10px; /* padding inside the card */
-        background-color: #343a40; /* Bootstrap dark */
+        padding: 10px;
+        background-color: #343a40; /* dark background */
         color: #ffffff;
       }
 
-      /* Ensure consistent media size inside cards */
+      /* keep images/videos same size */
       .card-img-top,
       video.card-img-top {
         height: 220px;
@@ -42,7 +42,7 @@
         border-radius: 5px;
       }
 
-      /* Collapse text white */
+      /* make sure collapse text stays white */
       .collapse p {
         color: #ffffff !important;
       }
@@ -54,6 +54,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark" role="navigation" aria-label="Main navigation">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Explore</a>
+        <!-- toggle button for mobile -->
         <button
           class="navbar-toggler"
           type="button"
@@ -65,6 +66,7 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+        <!-- links -->
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
             <a class="nav-link" href="index.html">Home</a>
@@ -83,7 +85,7 @@
       <p class="lead">Showcasing assignments and personal projects</p>
     </div>
 
-    <!-- Main content wrapper -->
+    <!-- Main content -->
     <main>
       <!-- Projects Section -->
       <div class="container mt-5 mb-5">
@@ -91,6 +93,7 @@
           <!-- Project 1 -->
           <div class="col-md-4">
             <div class="card h-100 shadow project-card">
+              <!-- short video demo -->
               <video class="card-img-top" autoplay loop muted playsinline>
                 <source src="images/unitygame.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
@@ -100,9 +103,11 @@
                 <p class="card-text">
                   A Unity 3D game demonstrating mechanics, physics, and scripting.
                 </p>
+                <!-- collapse button -->
                 <a class="btn btn-sm btn-outline-light" data-bs-toggle="collapse" href="#project1Details" role="button" aria-expanded="false" aria-controls="project1Details">
                   Read More
                 </a>
+                <!-- collapse content -->
                 <div class="collapse mt-2" id="project1Details">
                   <p class="small">
                     Learned player movement, collisions, and basic AI.  
@@ -117,6 +122,7 @@
           <!-- Project 2 -->
           <div class="col-md-4">
             <div class="card h-100 shadow project-card">
+              <!-- static image -->
               <img
                 src="images/website.jpg"
                 class="card-img-top"
