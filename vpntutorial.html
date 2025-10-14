@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>VPN Tutorial</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      html, body {
+        height: 100%;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+      }
+      main {
+        flex: 1;
+      }
+
+      .tutorial-card {
+        margin-top: 10px;
+        background-color: #343a40;
+        color: white;
+        border-radius: 10px;
+        padding: 20px;
+      }
+
+      .icon {
+        font-size: 3rem;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" role="navigation" aria-label="Main navigation">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Explore</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="technicalproject.html">Projects</a>
+            <a class="nav-link active" aria-current="page" href="vpntutorial.html">VPN Tutorial</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div
+      class="container-fluid text-white text-center py-5 mb-5"
+      style="background: linear-gradient(90deg, #1e3c72, #2a5298);"
+    >
+      <h1 class="display-4">VPN Tutorial</h1>
+      <p class="lead">
+        Learn what a VPN is and how to use it to keep your internet safe and private.
+      </p>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+      <div class="container mb-5">
+        <div class="row g-4">
+          <!-- What is a VPN -->
+          <div class="col-md-6">
+            <div class="tutorial-card h-100 shadow">
+              <h3>What is a VPN?</h3>
+              <p>
+                A <strong>VPN</strong> (Virtual Private Network) is a tool that helps keep your internet activity private.  
+                It hides where you are and protects what you do online.
+              </p>
+              <p>
+                Think of it like a private tunnel for your internet — no one else can see what you’re doing while you’re connected.
+              </p>
+              <a href="https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/what-is-vpn" target="_blank" class="btn btn-outline-light btn-sm mt-2">
+                Learn More
+              </a>
+            </div>
+          </div>
+
+          <!-- Why use one -->
+          <div class="col-md-6">
+            <div class="tutorial-card h-100 shadow">
+              <h3>Why Use a VPN?</h3>
+              <ul>
+                <li>Keeps your data safe when using public Wi-Fi</li>
+                <li>Hides your location from websites</li>
+                <li>Lets you see content from other countries</li>
+                <li>Adds extra privacy and safety online</li>
+              </ul>
+              <p>
+                VPNs are useful for anyone who wants a safer and more private internet experience.
+              </p>
+              <a href="https://www.fortinet.com/resources/cyberglossary/benefits-of-vpn" target="_blank" class="btn btn-outline-light btn-sm mt-2">
+                Read Benefits
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 1: Download Proton VPN -->
+        <div class="row mt-5">
+          <div class="col">
+            <div class="tutorial-card shadow">
+              <h3>Step 1: Download Proton VPN</h3>
+              <p>
+                Click the link below to go to the Proton VPN website.  
+                There, choose the correct windows version for your computer
+              </p>
+              <p>
+                <a href="https://protonvpn.com/download" target="_blank" class="btn btn-outline-light btn-sm">
+                  Go to Proton VPN Download Page
+                </a>
+              </p>
+              <div class="text-center mt-3">
+                <img src="images/vpndownload.jpg" alt="Proton VPN Download Button" class="img-fluid rounded shadow" style="max-width: 500px;" />
+                <p class="mt-2" style="color: rgba(255, 255, 255, 0.8);">
+                  Click the Download button and pick your device type.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 2: Create an Account and Sign In -->
+        <div class="row mt-5">
+          <div class="col">
+            <div class="tutorial-card shadow">
+              <h3>Step 2: Create an Account and Sign In</h3>
+              <p>
+                After the app is installed, open Proton VPN.  
+                You’ll see options to make a new account or to sign in if you already have one.
+              </p>
+              <p>
+                If you’re new, click <strong>“Create Account”</strong> and follow the steps.  
+                You’ll type your email and make a password.  
+                Then you can log in to the app.
+              </p>
+
+              <div class="text-center mt-3">
+                <img
+                  src="images/vpndesktop.jpg"
+                  alt="Proton VPN Desktop App Create Account Screen"
+                  class="img-fluid rounded shadow"
+                  style="max-width: 600px;"
+                />
+                <p class="mt-2" style="color: rgba(255, 255, 255, 0.8);">
+                  The Proton VPN app lets you create an account or sign in.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 3: Connect to a VPN Server -->
+        <div class="row mt-5">
+          <div class="col">
+            <div class="tutorial-card shadow">
+              <h3>Step 3: Connect to a VPN Server</h3>
+              <p>
+                After signing in, you’ll see the main Proton VPN screen.  
+                To start using the VPN, click the <strong>“Connect”</strong> button.
+              </p>
+              <p>
+                The free version connects you to a fast, safe server chosen by Proton VPN.  
+                If you get the paid version, you can pick a server from a country you choose.
+              </p>
+
+              <div class="text-center mt-3">
+                <!-- Before connecting -->
+                <img
+                  src="images/vpnbefore.jpg"
+                  alt="Proton VPN Home Screen Before Connecting"
+                  class="img-fluid rounded shadow mb-3"
+                  style="max-width: 600px;"
+                />
+                <p class="mt-2" style="color: rgba(255, 255, 255, 0.8);">
+                  Before connecting — click “Connect” to start.
+                </p>
+
+                <!-- After connecting -->
+                <img
+                  src="images/vpnafter.jpg"
+                  alt="Proton VPN Connected to Server"
+                  class="img-fluid rounded shadow mt-4"
+                  style="max-width: 600px;"
+                />
+                <p class="mt-2" style="color: rgba(255, 255, 255, 0.8);">
+                  You’re connected! Your internet is now protected, and your location is hidden.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Visual Example -->
+        <div class="row mt-5">
+          <div class="col text-center">
+            <img src="images/vpn-diagram.jpg" alt="VPN Diagram Example" class="img-fluid rounded shadow" style="max-width: 700px;" />
+            <p class="mt-3" style="color: rgba(255, 255, 255, 0.8);">
+              Example: How a VPN protects your connection.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-auto">
+      <p class="mb-0">&copy; 2025 Erik Porter | All Rights Reserved</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
