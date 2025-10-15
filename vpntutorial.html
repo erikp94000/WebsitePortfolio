@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -34,6 +35,29 @@
       .icon {
         font-size: 3rem;
         margin-bottom: 10px;
+      }
+
+      /* ✅ Responsive image fix */
+      .responsive-img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+      }
+
+      @media (min-width: 768px) {
+        .responsive-img {
+          max-width: 500px;
+        }
+      }
+
+      @media (min-width: 992px) {
+        .responsive-img {
+          max-width: 600px;
+        }
+      }
+
+      img {
+        margin-bottom: 1rem;
       }
     </style>
   </head>
@@ -123,7 +147,7 @@
               <h3>Step 1: Download Proton VPN</h3>
               <p>
                 Click the link below to go to the Proton VPN website.  
-                There, choose the correct windows version for your computer
+                There, choose the correct windows version for your computer.
               </p>
               <p>
                 <a href="https://protonvpn.com/download" target="_blank" class="btn btn-outline-light btn-sm">
@@ -131,7 +155,11 @@
                 </a>
               </p>
               <div class="text-center mt-3">
-                <img src="images/vpndownload.jpg" alt="Proton VPN Download Button" class="img-fluid rounded shadow" style="max-width: 500px;" />
+                <img 
+                  src="images/vpndownload.jpg" 
+                  alt="Proton VPN Download Button" 
+                  class="img-fluid rounded shadow responsive-img mx-auto d-block"
+                />
                 <p class="mt-2" style="color: rgba(255, 255, 255, 0.8);">
                   Click the Download button and pick your device type.
                 </p>
@@ -159,8 +187,7 @@
                 <img
                   src="images/vpndesktop.jpg"
                   alt="Proton VPN Desktop App Create Account Screen"
-                  class="img-fluid rounded shadow"
-                  style="max-width: 600px;"
+                  class="img-fluid rounded shadow responsive-img mx-auto d-block"
                 />
                 <p class="mt-2" style="color: rgba(255, 255, 255, 0.8);">
                   The Proton VPN app lets you create an account or sign in.
@@ -189,8 +216,7 @@
                 <img
                   src="images/vpnbefore.jpg"
                   alt="Proton VPN Home Screen Before Connecting"
-                  class="img-fluid rounded shadow mb-3"
-                  style="max-width: 600px;"
+                  class="img-fluid rounded shadow responsive-img mx-auto d-block mb-3"
                 />
                 <p class="mt-2" style="color: rgba(255, 255, 255, 0.8);">
                   Before connecting — click “Connect” to start.
@@ -200,8 +226,7 @@
                 <img
                   src="images/vpnafter.jpg"
                   alt="Proton VPN Connected to Server"
-                  class="img-fluid rounded shadow mt-4"
-                  style="max-width: 600px;"
+                  class="img-fluid rounded shadow responsive-img mx-auto d-block mt-4"
                 />
                 <p class="mt-2" style="color: rgba(255, 255, 255, 0.8);">
                   You’re connected! Your internet is now protected, and your location is hidden.
@@ -210,7 +235,7 @@
             </div>
           </div>
         </div>
-
+      </div>
     </main>
 
     <!-- Footer -->
